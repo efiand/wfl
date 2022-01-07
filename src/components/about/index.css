@@ -1,0 +1,182 @@
+.about {
+  padding: 2rem 0;
+
+  @media (--tablet-desktop) {
+    padding: 90px 0;
+  }
+}
+
+.about__heading {
+  margin: 0 0 2rem;
+
+  @media (--tablet-desktop) {
+    margin-bottom: 60px;
+  }
+}
+
+.about__body {
+  display: grid;
+  gap: 7rem;
+  margin-bottom: 3rem;
+
+  @media (--desktop) {
+    grid-template-columns: 1fr 445px;
+    gap: 130px;
+    margin-bottom: 15rem;
+  }
+}
+
+.about__text {
+  opacity: 0.7;
+}
+
+.about__features {
+  display: grid;
+  gap: 1.5rem;
+  margin: 2rem 0 0;
+  padding: 0;
+  list-style: none;
+  font-weight: 600;
+  font-size: 18px;
+
+  @media (--tablet-desktop) {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 60px;
+  }
+}
+
+.about__feature {
+  position: relative;
+  padding-left: 50px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    background-color: var(--color-accent);
+    border-radius: 10px 0;
+  }
+}
+
+.about__collage {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @media (--tablet-desktop) {
+    top: -5px;
+  }
+}
+
+.about__img {
+  position: relative;
+  display: table;
+  max-width: 350px;
+  margin-left: auto;
+  border-radius: 20px 0;
+  object-fit: cover;
+  cursor: pointer;
+  opacity: 0.3;
+
+  @media (--tablet-desktop) {
+    margin-left: 95px;
+  }
+
+  &:first-child {
+    position: absolute;
+    top: -4rem;
+    left: 0;
+    margin-left: 0;
+
+    @media (--tablet-desktop) {
+      margin-left: 0;
+    }
+  }
+
+  &--active {
+    z-index: 1;
+    cursor: default;
+    opacity: 1;
+  }
+
+  img {
+    pointer-events: none;
+  }
+}
+
+.about__quote-wrapper {
+  position: relative;
+  padding: 1.5rem;
+  border: 1px solid;
+  border-radius: 30px 0;
+
+  @media (--tablet-desktop) {
+    padding: 50px 5rem;
+  }
+
+  @media (--desktop) {
+    min-height: 212px;
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
+
+    @media (--desktop) {
+      position: absolute;
+      top: 50%;
+      right: 5rem;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.about__quote {
+  position: relative;
+  margin: 0;
+
+  @media (--tablet-desktop) {
+    font-size: 18px;
+  }
+
+  @media (--desktop) {
+    margin-right: 430px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 0;
+    z-index: -1;
+    width: 103px;
+    height: 92px;
+    background-image: url("../img/sprite.min.svg#quote");
+    background-repeat: no-repeat;
+    opacity: 0.1;
+  }
+}
+
+.about__cite {
+  display: block;
+  margin: 1.5rem 0 2rem;
+  padding-top: 0.5rem;
+  font-weight: 700;
+  font-style: normal;
+  border-top: 1px solid var(--color-white-op60);
+
+  @media (--desktop) {
+    margin: 1.5rem 0 0;
+    padding-top: 1.5rem;
+  }
+
+  a {
+    color: var(--color-accent);
+    text-decoration: none;
+  }
+}

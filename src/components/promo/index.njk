@@ -1,0 +1,9 @@
+<section class="promo">
+  <h1 class="promo__heading">
+    {{ headingLabel }}
+    <span class="promo__name">{{ heading }}</span>
+  </h1>
+  {% if track %}
+    {% with track %}{% include "components/media/index.njk" %}{% endwith %}
+  {% endif %}
+</section>

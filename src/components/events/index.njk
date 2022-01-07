@@ -1,0 +1,17 @@
+<section class="events">
+  <h2 class="visually-hidden">{{ heading }}</h2>
+
+  <div class="events__slider slider">
+    <div class="slider__body">
+      <ul class="slider__list">
+        {% for event in list %}
+          <li class="slider__item">
+            {% with event %}{% include "components/event/index.njk" %}{% endwith %}
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+    <button class="slider__control slider__control--prev" aria-label="Prev" disabled></button>
+    <button class="slider__control slider__control--next" aria-label="Next"></button>
+  </div>
+</section>

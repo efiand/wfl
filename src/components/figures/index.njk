@@ -1,0 +1,14 @@
+<section class="figures">
+  <h2 class="visually-hidden">{{ heading }}</h2>
+
+  <ul class="figures__list">
+    {% for figure in list %}
+      <li>
+        <figure class="figures__item">
+          {% with figure.image %}{% include "components/picture/index.njk" %}{% endwith %}
+          <figcaption class="figures__title">{{ figure.title }}</figcaption>
+        </figure>
+      </li>
+    {% endfor %}
+  </ul>
+</section>

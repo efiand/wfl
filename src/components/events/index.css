@@ -1,0 +1,7 @@
+.events {
+  padding: 2rem 0;
+
+  @media (--tablet-desktop) {
+    padding: 90px 0;
+  }
+}

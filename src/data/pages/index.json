@@ -1,0 +1,217 @@
+{
+  "promo": {
+    "headingLabel": "New Single",
+    "heading": "War For Love",
+    "track": {
+      "src": "https://download.samplelib.com/mp3/sample-15s.mp3",
+      "duration": 19.225
+    }
+  },
+  "news": {
+    "heading": "News",
+    "list": [
+      {
+        "title": "Working on my upcoming full-lenth album that`s releasing later this year.",
+        "image": {
+          "src": "img/news-1.png",
+          "alt": "Picture about this"
+        }
+      },
+      {
+        "title": "Halloween vibes.<br>Listen my new track!",
+        "image": {
+          "src": "img/news-2.png",
+          "alt": "Picture about this"
+        }
+      },
+      {
+        "title": "WarForLove is OUT NOW!!<br>Stream it here!",
+        "image": {
+          "src": "img/news-3.png",
+          "alt": "Picture about this"
+        }
+      }
+    ]
+  },
+  "about": {
+    "heading": "Bright Lights",
+    "text": "<p>Bright Lights is a multi-Grammy nominated singer, songwriter, DJ and record producer. She has written for numerous</p><p>pop stars including Britney Spears, Justin Bieber, Usher and Beyoncé. Her catalog has amassed over 1 billion streams worldwide. More than 100 million of those streams can be attributed to her artist career and include such hits as Porter Robinson's \"Language,\" 3LAU's \"How You Love Me\" and her own single \"Runaway.\" She was also a featured vocalist on Zedd's #1 Clarity album. Her latest music video, \"Put It Down,\" reached 1 million streams in the first week, releasing independently. Bright Lights is currently in the studio working on a self-produced album slated for release in 2020.</p>",
+    "features": [
+      "Based in: Los Angeles",
+      "Founded in 2011",
+      "Genre: #DancePop",
+      "Label: 333 Recordings"
+    ],
+    "collage": [
+      {
+        "src": "img/about-1.png",
+        "alt": ""
+      },
+      {
+        "src": "img/about-2.png",
+        "alt": ""
+      }
+    ],
+    "quote": "“In an age where mainstream music is designed to be as easily consumed as possible, listening to Bright Lights is refreshing, to say the least. Her sound is perfect for radio but complex enough to separate her from other pop newcomers.”",
+    "cite": "<a href=\"https://populove.net\">PopULove.net</a>",
+    "quoteImage": {
+      "src": "img/about-3.png",
+      "src2x": "img/about-3@2x.png",
+      "alt": ""
+    }
+  },
+  "playlist": {
+    "heading": "Last tracks",
+    "image": {
+      "src": "img/playlist.png",
+      "alt": ""
+    },
+    "tracks": [
+      {
+        "title": "3LAU, Bright Lights — How You Love Me",
+        "src": "https://download.samplelib.com/mp3/sample-15s.mp3",
+        "duration": 19.225
+      },
+      {
+        "title": "Bright Lights, Kaleena Zanders, Kandy — War For Love",
+        "src": "https://download.samplelib.com/mp3/sample-15s.mp3",
+        "duration": 19.225
+      },
+      {
+        "title": "Pink Is Punk, Benny Benassi, Bright Lights — Ghost",
+        "src": "https://download.samplelib.com/mp3/sample-15s.mp3",
+        "duration": 19.225
+      },
+      {
+        "title": "Hardwell, Dyro, Bright Lights — Never Say Goodbye",
+        "src": "https://download.samplelib.com/mp3/sample-15s.mp3",
+        "duration": 19.225
+      },
+      {
+        "title": "Zeds Dead, Dirtyphonics, Bright Lights — Where Are You Now",
+        "src": "https://download.samplelib.com/mp3/sample-15s.mp3",
+        "duration": 19.225
+      },
+      {
+        "title": "Zedd, Bright Lights — Follow You Down",
+        "src": "https://download.samplelib.com/mp3/sample-15s.mp3",
+        "duration": 19.225
+      }
+    ],
+    "follow": {
+      "heading": "Follow me:",
+      "links": [
+        {
+          "icon": "spotify",
+          "title": "Spotify",
+          "href": "blank.html"
+        },
+        {
+          "icon": "apple",
+          "title": "iTunes",
+          "href": "blank.html"
+        }
+      ]
+    }
+  },
+  "gallery": {
+    "heading": "Gallery",
+    "list": [
+      {
+        "src": "img/gallery-1.png",
+        "alt": "",
+        "title": "Test 1",
+        "href": "blank.html",
+        "area": "high1"
+      },
+      {
+        "src": "img/gallery-2.png",
+        "alt": "",
+        "title": "Test 2",
+        "href": "blank.html",
+        "area": "min1"
+      },
+      {
+        "src": "img/gallery-3.png",
+        "alt": "",
+        "title": "Test 3",
+        "href": "blank.html",
+        "area": "min2"
+      },
+      {
+        "src": "img/gallery-4.png",
+        "alt": "",
+        "title": "Test 4",
+        "href": "blank.html",
+        "area": "high2"
+      },
+      {
+        "src": "img/gallery-5.png",
+        "alt": "",
+        "title": "EDC Las Vegas Mainstage",
+        "href": "blank.html",
+        "area": "wide"
+      }
+    ]
+  },
+  "events": {
+    "heading": "events",
+    "list": [
+      {
+        "place": "Chandler, AZ",
+        "title": "The Park at Wild Horse Pass",
+        "date": "2021-04-02",
+        "dateStr": "Apr 02 2021",
+        "href": "blank.html",
+        "image": {
+          "src": "img/event-1.png",
+          "alt": ""
+        }
+      },
+      {
+        "place": "Ibiza, IBZ",
+        "title": "Swag Ibiza Club",
+        "date": "2021-07-08",
+        "dateStr": "Jul 08 2021",
+        "href": "blank.html",
+        "image": {
+          "src": "img/event-2.png",
+          "alt": ""
+        }
+      },
+      {
+        "place": "Ibiza, IBZ",
+        "title": "El Swing Ibiza",
+        "date": "2021-07-10",
+        "dateStr": "Jul 10 2021",
+        "href": "blank.html",
+        "image": {
+          "src": "img/event-3.png",
+          "alt": ""
+        }
+      },
+      {
+        "place": "Chandler, AZ",
+        "title": "Swag Ibiza Club",
+        "date": "2021-07-08",
+        "dateStr": "Jul 08 2021",
+        "href": "blank.html",
+        "image": {
+          "src": "img/about-1.png",
+          "alt": ""
+        }
+      },
+      {
+        "place": "Ibiza, IBZ",
+        "title": "El Swing Ibiza",
+        "date": "2021-07-10",
+        "dateStr": "Jul 10 2021",
+        "href": "blank.html",
+        "image": {
+          "src": "img/news-1.png",
+          "alt": ""
+        }
+      }
+    ]
+  }
+}

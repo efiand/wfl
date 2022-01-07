@@ -1,0 +1,54 @@
+{
+  "projectName": "War For Love",
+  "host": "https://efiand.github.io/wfl",
+  "logo": {
+    "src": "img/logo.png",
+    "alt": "Bright Lights logo"
+  },
+  "pages": {
+    "About": "blank.html",
+    "News": "blank.html",
+    "Music": "blank.html",
+    "Media": "blank.html",
+    "Tours": "blank.html",
+    "Contacts": "blank.html"
+  },
+  "pageBg": "img/promo-bg.jpg",
+  "contacts": {
+    "Artist management": "Jake Henny",
+    "Email": "<a href=\"mailto:jake@brightlightsofficial.com\">jake@brightlightsofficial.com</a>"
+  },
+  "socials": [
+    {
+      "icon": "apple",
+      "title": "iTunes",
+      "href": "blank.html"
+    },
+    {
+      "icon": "spotify",
+      "title": "Spotify",
+      "href": "blank.html"
+    },
+    {
+      "icon": "instagram",
+      "title": "Instagram",
+      "href": "blank.html"
+    },
+    {
+      "icon": "youtube",
+      "title": "Youtube",
+      "href": "blank.html"
+    },
+    {
+      "icon": "twitter",
+      "title": "Twitter",
+      "href": "blank.html"
+    },
+    {
+      "icon": "facebook",
+      "title": "Facebook",
+      "href": "blank.html"
+    }
+  ],
+  "copyright": "©&nbsp; 2020 DJ bright lights."
+}

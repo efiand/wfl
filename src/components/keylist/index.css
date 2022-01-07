@@ -1,0 +1,36 @@
+.keylist {
+  margin: 0;
+
+  @media (--tablet-desktop) {
+    display: grid;
+    grid-template-columns: min-content min-content;
+    gap: 0;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+}
+
+.keylist__key {
+  font-weight: 600;
+  white-space: nowrap;
+
+  &::after {
+    content: ":";
+  }
+
+  @media (--tablet-desktop) {
+    text-align: right;
+  }
+}
+
+.keylist__value {
+  margin-left: 1rem;
+
+  @media (--tablet-desktop) {
+    margin-left: 30px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}

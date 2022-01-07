@@ -1,0 +1,9 @@
+<picture>
+  {% if src2x %}
+    <source type="image/webp" srcset="{{ src | dropExt }}.webp, {{ src2x | dropExt }}.webp 2x">
+    <img src="{{ src }}" srcset="{{ src2x }} 2x" alt="{{ alt }}">
+  {% else %}
+    <source type="image/webp" srcset="{{ src | dropExt }}.webp">
+    <img src="{{ src }}" alt="{{ alt }}">
+  {% endif %}
+</picture>

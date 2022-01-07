@@ -1,0 +1,42 @@
+.follow {
+  @media (--tablet-desktop) {
+    display: flex;
+  }
+}
+
+.follow__heading {
+  flex-shrink: 0;
+  margin: 0;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.follow__links {
+  display: flex;
+  margin: 0 0 -1rem;
+  padding: 0 0 0 40px;
+  list-style: none;
+}
+
+.follow__link {
+  position: relative;
+  display: table;
+  margin: 0 30px 1rem 0;
+  padding: 0.5rem 0 0 40px;
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+  background-size: 0 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 5px;
+    width: 22px;
+    height: 20px;
+    background-image: inherit;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+}

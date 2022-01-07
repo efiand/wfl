@@ -1,0 +1,32 @@
+.socials {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.socials__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem;
+  background-color: var(--color-accent);
+  background-size: 0 0;
+  border: 0.5rem solid var(--color-blacky-lite);
+  border-radius: 50%;
+
+  @media (--tablet-desktop) {
+    margin: 15px;
+  }
+
+  &::before {
+    content: "";
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 10px;
+    background-image: inherit;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+}

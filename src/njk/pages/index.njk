@@ -1,0 +1,10 @@
+{% extends "njk/layout.njk" %}
+
+{% block main %}
+  {% with promo %}{% include "components/promo/index.njk" %}{% endwith %}
+  {% with news %}{% include "components/figures/index.njk" %}{% endwith %}
+  {% with about %}{% include "components/about/index.njk" %}{% endwith %}
+  {% with playlist %}{% include "components/playlist/index.njk" %}{% endwith %}
+  {% with gallery %}{% include "components/gallery/index.njk" %}{% endwith %}
+  {% with events %}{% include "components/events/index.njk" %}{% endwith %}
+{% endblock %}

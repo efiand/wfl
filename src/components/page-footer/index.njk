@@ -1,0 +1,14 @@
+<footer class="page-footer">
+  <a class="page-footer__rootlink" href="index.html">
+    {% with logo %}{% include "components/picture/index.njk" %}{% endwith %}
+  </a>
+
+  <div class="page-footer__contacts">
+    {% with { list: contacts } %}{% include "components/keylist/index.njk" %}{% endwith %}
+  </div>
+
+  {% set props = { socials: socials, mix: "page-footer__socials" } %}
+  {% with props %}{% include "components/socials/index.njk" %}{% endwith %}
+
+  <p class="page-footer__copyright">{{ copyright }}</p>
+</footer>

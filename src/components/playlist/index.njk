@@ -1,0 +1,29 @@
+<section class="playlist">
+  <h2 class="playlist__heading heading">{{ heading }}</h2>
+
+  <div class="playlist__image-wrapper">
+    {% with image %}{% include "components/picture/index.njk" %}{% endwith %}
+  </div>
+
+  <div class="playlist__body">
+    <ul class="playlist__players">
+      {% for track in tracks %}
+        <li class="playlist__player {{ 'playlist__player--active' if loop.first }}" data-track="{{ loop.index0 }}">
+          {% with track %}{% include "components/media/index.njk" %}{% endwith %}
+        </li>
+      {% endfor %}
+    </ul>
+
+    <ul class="playlist__tracks">
+      {% for track in tracks %}
+        <li class="playlist__track">
+          <button class="playlist__track-opener {{ 'playlist__track-opener--active' if loop.first }}" data-track="{{ loop.index0 }}">
+            {{ track.title }}
+          </button>
+        </li>
+      {% endfor %}
+    </ul>
+
+    {% with follow | setProp("mix", "playlist__follow") %}{% include "components/follow/index.njk" %}{% endwith %}
+  </div>
+</section>

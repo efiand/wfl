@@ -1,0 +1,50 @@
+html {
+  --color-blacky: #1c1b21;
+  --color-blacky-op80: rgba(28, 27, 33, 0.8);
+  --color-blacky-lite: #2f2b2b;
+  --color-white: #ffffff;
+  --color-accent: #7a66cc;
+  --color-white-op60: rgba(255, 255, 255, 0.6);
+  --color-white-op50: rgba(255, 255, 255, 0.5);
+  --color-accent-op70: rgba(122, 102, 204, 0.7);
+  --color-accent-op60: rgba(122, 102, 204, 0.6);
+  --color-accent-op30: rgba(122, 102, 204, 0.3);
+  --content-width: 1110px;
+
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "Poppins", sans-serif;
+  color: var(--color-white);
+  background-color: var(--color-blacky);
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  overflow-y: scroll;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+}
+
+a,
+button {
+  font-family: inherit;
+  color: inherit;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.3s;
+  transition-property: color, opacity;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

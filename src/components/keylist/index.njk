@@ -1,0 +1,6 @@
+<dl class="keylist">
+  {% for key in list | keys %}
+    <dt class="keylist__key">{{ key }}</dt>
+    <dd class="keylist__value">{{ list[key] }}</dd>
+  {% endfor %}
+</dl>
