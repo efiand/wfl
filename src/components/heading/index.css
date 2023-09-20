@@ -1,0 +1,22 @@
+.heading {
+  font-weight: 700;
+  font-size: 2.5rem;
+
+  @media (--tablet-desktop) {
+    position: relative;
+    padding-left: 95px;
+    font-size: 3rem;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 21px;
+      left: 0;
+      width: 4rem;
+      height: 31px;
+      background-image: url("../img/sprite.min.svg#hystogram");
+      background-position: 0 50%;
+      background-size: cover;
+    }
+  }
+}

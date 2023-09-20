@@ -1,0 +1,122 @@
+.playlist {
+  display: grid;
+  gap: 1rem;
+  padding: 2rem 0;
+
+  @media (--desktop) {
+    grid-template-areas:
+      "img heading"
+      "img body";
+    grid-template-columns: 510px 1fr;
+    grid-template-rows: min-content 1fr;
+    gap: 0 60px;
+    padding: 175px 0 90px;
+  }
+}
+
+.playlist__heading {
+  margin: 0;
+
+  @media (--desktop) {
+    grid-area: heading;
+  }
+}
+
+.playlist__image-wrapper {
+  justify-self: center;
+  max-width: 436px;
+  padding: 18px;
+  background-color: var(--color-accent-op60);
+  background-clip: padding-box;
+  border: 18px solid var(--color-accent-op30);
+  border-radius: 50%;
+
+  @media (--desktop) {
+    align-self: start;
+    grid-area: img;
+    margin-top: 36px;
+  }
+
+  img {
+    display: block;
+    object-fit: cover;
+  }
+}
+
+.playlist__body {
+  @media (--tablet-desktop) {
+    padding-top: 42px;
+  }
+
+  @media (--desktop) {
+    grid-area: body;
+  }
+}
+
+.playlist__players {
+  margin: 0 0 2rem;
+  padding: 0;
+  list-style: none;
+}
+
+.playlist__player {
+  display: none;
+
+  &--active {
+    display: block;
+  }
+}
+
+.playlist__tracks {
+  margin: 0 0 2rem;
+  padding: 0;
+  list-style: none;
+  counter-reset: tracks;
+
+  @media (--tablet-desktop) {
+    margin-bottom: 3rem;
+  }
+}
+
+.playlist__track-opener {
+  position: relative;
+  padding: 0 0 0 35px;
+  font-weight: 600;
+  font-size: 1rem;
+  text-align: left;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  @media (--tablet-desktop) {
+    font-size: 18px;
+  }
+
+  &--active {
+    color: var(--color-accent);
+  }
+
+  &::before {
+    content: counter(tracks);
+    position: absolute;
+    top: 4px;
+    left: 18px;
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--color-white-op50);
+    transform: translateX(-100%);
+  }
+}
+
+.playlist__track {
+  margin-bottom: 1rem;
+  counter-increment: tracks;
+
+  @media (--tablet-desktop) {
+    margin-bottom: 20px;
+  }
+
+  &:nth-child(-n + 9) .playlist__track-opener::before {
+    content: "0" counter(tracks);
+  }
+}

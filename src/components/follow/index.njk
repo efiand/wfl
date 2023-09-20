@@ -1,0 +1,13 @@
+<div class="follow {{ mix }}">
+  <p class="follow__heading">{{ heading }}</p>
+
+  <ul class="follow__links">
+    {% for link in links %}
+      <li>
+        <a class="follow__link" href="{{ link.url}}" style="background-image: url(img/sprite.min.svg#{{ link.icon }})">
+          {{ link.title }}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>

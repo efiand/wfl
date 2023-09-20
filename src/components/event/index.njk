@@ -1,0 +1,9 @@
+<article class="event">
+  {% with image %}{% include "components/picture/index.njk" %}{% endwith %}
+
+  <p class="event__place">{{ place }}</p>
+  <h3 class="event__title">{{ title }}</h3>
+
+  <time class="event__date" datetime="{{ date}}">{{ date | datefmt }}</time>
+  <a class="event__link" href="{{ href }}">Tickets</a>
+</article>

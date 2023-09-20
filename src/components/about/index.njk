@@ -1,0 +1,29 @@
+<section class="about">
+  <h2 class="about__heading heading">{{ heading }}</h2>
+
+  <div class="about__body">
+    <div class="about__content">
+      <div class="about__text content">{{ text }}</div>
+      <ul class="about__features">
+        {% for item in features %}
+          <li class="about__feature">{{ item }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    <ul class="about__collage">
+      {% for img in collage %}
+        <li class="about__img {{ 'about__img--active' if loop.first }}">
+          {% with img %}{% include "components/picture/index.njk" %}{% endwith %}
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <div class="about__quote-wrapper">
+    <blockquote class="about__quote">
+      {{ quote }}
+      <cite class="about__cite">{{ cite }}</cite>
+    </blockquote>
+    {% with quoteImage %}{% include "components/picture/index.njk" %}{% endwith %}
+  </div>
+</section>

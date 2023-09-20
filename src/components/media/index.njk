@@ -1,0 +1,10 @@
+<div class="media">
+  <audio class="media__src visually-hidden" src="{{ src }}"></audio>
+  <button class="media__control" aria-label="Play" data-pause-label="Pause"></button>
+  <div class="media__progress" style="--progress: 0%">
+    <input class="media__timeline" type="range" value="0" min="0" max="{{ duration * 1000 }}">
+  </div>
+  <p class="media__values">
+    <span class="media__position">00:00</span>–{{ duration | minsec }}
+  </p>
+</div>

@@ -1,0 +1,24 @@
+.promo {
+  padding: 22px 0;
+
+  @media (--tablet-desktop) {
+    padding-top: 292px;
+  }
+}
+
+.promo__heading {
+  margin: 0 0 2rem;
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.promo__name {
+  display: block;
+  margin-top: 10px;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--color-white);
+
+  @media (--tablet-desktop) {
+    font-size: 100px;
+  }
+}

@@ -1,0 +1,15 @@
+<header class="page-header container">
+  <nav class="page-header__nav">
+    <a class="page-header__rootlink" href="index.html">
+      {% with logo %}{% include "components/picture/index.njk" %}{% endwith %}
+    </a>
+
+    <ul class="page-header__list">
+      {% for page in (pages | keys) %}
+        <li class="page-header__item">
+          <a class="page-header__link" href="{{ pages[page] }}">{{ page }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>
+</header>
